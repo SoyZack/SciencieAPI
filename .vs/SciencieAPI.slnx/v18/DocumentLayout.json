@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\cientificos\\actualizarcientificodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\cientificos\\actualizarcientificodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\models\\cientifico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\models\\cientifico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\cientificos\\cientificodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\cientificos\\cientificodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\cientificos\\cientificodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\cientificos\\cientificodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\controllers\\descubrimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\controllers\\descubrimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\controllers\\especialidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\controllers\\especialidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\controllers\\investigacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\controllers\\investigacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\controllers\\cientificocontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\controllers\\cientificocontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\investigaciones\\investigaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\investigaciones\\investigaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\investigaciones\\actualizarinvestigaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\investigaciones\\actualizarinvestigaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\especialidades\\especialidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\especialidades\\especialidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\descubrimientos\\descubrimientosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\descubrimientos\\descubrimientosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|c:\\users\\uptim\\source\\repos\\sciencieapi\\sciencieapi\\dtos\\descubrimientos\\actualizardescubrimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC8FCB6-B367-FE7B-BBBC-26BD774FD280}|SciencieAPI\\SciencieAPI.csproj|solutionrelative:sciencieapi\\dtos\\descubrimientos\\actualizardescubrimientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CientificoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Cientificos\\CientificoDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Cientificos\\CientificoDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Cientificos\\CientificoDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Cientificos\\CientificoDto.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T06:00:51.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActualizarCientificoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Cientificos\\ActualizarCientificoDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Cientificos\\ActualizarCientificoDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Cientificos\\ActualizarCientificoDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Cientificos\\ActualizarCientificoDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T06:00:44.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EspecialidadController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\EspecialidadController.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Controllers\\EspecialidadController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\EspecialidadController.cs",
+              "RelativeToolTip": "SciencieAPI\\Controllers\\EspecialidadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:59:27.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "SciencieAPI\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:35:21.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cientifico.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Models\\Cientifico.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Models\\Cientifico.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Models\\Cientifico.cs",
+              "RelativeToolTip": "SciencieAPI\\Models\\Cientifico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:35:32.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CientificoDetalleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Cientificos\\CientificoDetalleDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Cientificos\\CientificoDetalleDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Cientificos\\CientificoDetalleDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Cientificos\\CientificoDetalleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T06:00:48.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DescubrimientosController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\DescubrimientosController.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Controllers\\DescubrimientosController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\DescubrimientosController.cs",
+              "RelativeToolTip": "SciencieAPI\\Controllers\\DescubrimientosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:57:35.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Program.cs",
+              "RelativeToolTip": "SciencieAPI\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:42:54.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SciencieAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:31:55.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvestigacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\InvestigacionesController.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Controllers\\InvestigacionesController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\InvestigacionesController.cs",
+              "RelativeToolTip": "SciencieAPI\\Controllers\\InvestigacionesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:59:46.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InvestigacionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Investigaciones\\InvestigacionDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Investigaciones\\InvestigacionDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Investigaciones\\InvestigacionDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Investigaciones\\InvestigacionDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:34:56.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ActualizarInvestigacionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Investigaciones\\ActualizarInvestigacionDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Investigaciones\\ActualizarInvestigacionDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Investigaciones\\ActualizarInvestigacionDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Investigaciones\\ActualizarInvestigacionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:34:28.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CientificoControllercs.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\CientificoControllercs.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Controllers\\CientificoControllercs.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Controllers\\CientificoControllercs.cs",
+              "RelativeToolTip": "SciencieAPI\\Controllers\\CientificoControllercs.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:28:12.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EspecialidadDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Especialidades\\EspecialidadDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Especialidades\\EspecialidadDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Especialidades\\EspecialidadDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Especialidades\\EspecialidadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:34:24.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DescubrimientosDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Descubrimientos\\DescubrimientosDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Descubrimientos\\DescubrimientosDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Descubrimientos\\DescubrimientosDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Descubrimientos\\DescubrimientosDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:34:13.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ActualizarDescubrimientoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Descubrimientos\\ActualizarDescubrimientoDto.cs",
+              "RelativeDocumentMoniker": "SciencieAPI\\Dtos\\Descubrimientos\\ActualizarDescubrimientoDto.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\Dtos\\Descubrimientos\\ActualizarDescubrimientoDto.cs",
+              "RelativeToolTip": "SciencieAPI\\Dtos\\Descubrimientos\\ActualizarDescubrimientoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T05:34:04.323Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

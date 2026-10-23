@@ -1,0 +1,328 @@
+[
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "GetCientificos",
+    "RelativePath": "api/Cientificos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "CrearCientifico",
+    "RelativePath": "api/Cientificos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearDto",
+        "Type": "SciencieAPI.Dtos.Cientificos.CrearCientificoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.DescubrimientosController",
+    "Method": "GetDescubrimientosPorCientifico",
+    "RelativePath": "api/cientificos/{cientificoId}/descubrimientos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cientificoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "GetCientificoPorId",
+    "RelativePath": "api/Cientificos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "ActualizarCientifico",
+    "RelativePath": "api/Cientificos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "actualizarDto",
+        "Type": "SciencieAPI.Dtos.Cientificos.ActualizarCientificoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "EliminarCientifico",
+    "RelativePath": "api/Cientificos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "AsignarEspecialidad",
+    "RelativePath": "api/Cientificos/{id}/especialidades/{especialidadId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "especialidadId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.CientificosController",
+    "Method": "RemoverEspecialidad",
+    "RelativePath": "api/Cientificos/{id}/especialidades/{especialidadId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "especialidadId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.DescubrimientosController",
+    "Method": "GetDescubrimientos",
+    "RelativePath": "api/Descubrimientos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.DescubrimientosController",
+    "Method": "CrearDescubrimiento",
+    "RelativePath": "api/Descubrimientos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearDto",
+        "Type": "SciencieAPI.Dtos.Descubrimientos.CrearDescubrimientoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.DescubrimientosController",
+    "Method": "ActualizarDescubrimiento",
+    "RelativePath": "api/Descubrimientos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "actualizarDto",
+        "Type": "SciencieAPI.Dtos.Descubrimientos.ActualizarDescubrimientoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.DescubrimientosController",
+    "Method": "EliminarDescubrimiento",
+    "RelativePath": "api/Descubrimientos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.EspecialidadesController",
+    "Method": "GetEspecialidades",
+    "RelativePath": "api/Especialidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.EspecialidadesController",
+    "Method": "CrearEspecialidad",
+    "RelativePath": "api/Especialidades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearDto",
+        "Type": "SciencieAPI.Dtos.Especialidades.CrearEspecialidadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.InvestigacionesController",
+    "Method": "GetInvestigaciones",
+    "RelativePath": "api/Investigaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.InvestigacionesController",
+    "Method": "CrearInvestigacion",
+    "RelativePath": "api/Investigaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearDto",
+        "Type": "SciencieAPI.Dtos.Investigaciones.CrearInvestigacionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.InvestigacionesController",
+    "Method": "ActualizarInvestigacion",
+    "RelativePath": "api/Investigaciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "actualizarDto",
+        "Type": "SciencieAPI.Dtos.Investigaciones.ActualizarInvestigacionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.InvestigacionesController",
+    "Method": "EliminarInvestigacion",
+    "RelativePath": "api/Investigaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.InvestigacionesController",
+    "Method": "GetInvestigacionesPorEstado",
+    "RelativePath": "api/Investigaciones/estado/{estado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SciencieAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SciencieAPI.WeatherForecast, SciencieAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
