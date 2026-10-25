@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SciencieAPI.Data;
 using SciencieAPI.Dtos.Especialidades;
 using SciencieAPI.Models;
 
@@ -11,16 +10,16 @@ namespace SciencieAPI.Controllers
     [Route("api/[controller]")]
     public class EspecialidadesController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly DescubrimientosContext _context;
         private readonly IMapper _mapper;
 
-        public EspecialidadesController(AppDbContext context, IMapper mapper)
+        public EspecialidadesController(DescubrimientosContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
 
-        // GET: api/especialidades (Obtiene el catálogo de especialidades)[cite: 2]
+        // GET: Obtiene el catálogo de especialidades
         [HttpGet]
         public async Task<IActionResult> GetEspecialidades()
         {
@@ -29,7 +28,7 @@ namespace SciencieAPI.Controllers
             return Ok(especialidadesDto);
         }
 
-        // POST: api/especialidades (Crea una nueva especialidad)[cite: 2]
+        // POST: Crea una nueva especialidad
         [HttpPost]
         public async Task<IActionResult> CrearEspecialidad([FromBody] CrearEspecialidadDto crearDto)
         {

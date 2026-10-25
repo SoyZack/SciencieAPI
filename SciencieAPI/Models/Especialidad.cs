@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
 namespace SciencieAPI.Models
 {
     public class Especialidad
@@ -13,7 +12,6 @@ namespace SciencieAPI.Models
         [StringLength(255)]
         public string? Descripcion { get; set; }
 
-        // Propiedad de la navegacion para la relacion Muchos a Muchos
-        public ICollection<CientificoEspecialidad> CientificoEspecialidades { get; set; } = new List<CientificoEspecialidad>();
+        public virtual ICollection<Cientifico> Cientificos { get; set; } = new List<Cientifico>();
     }
 }

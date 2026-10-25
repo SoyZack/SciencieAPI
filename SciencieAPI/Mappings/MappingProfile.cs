@@ -4,6 +4,7 @@ using SciencieAPI.Dtos.Descubrimientos;
 using SciencieAPI.Dtos.Especialidades;
 using SciencieAPI.Dtos.Investigaciones;
 using SciencieAPI.Models;
+using System;
 
 namespace SciencieAPI.Mappings
 {
@@ -11,18 +12,26 @@ namespace SciencieAPI.Mappings
     {
         public MappingProfile()
         {
-            // Mapeos para Científicos
-            // Se mapean las especialidades a través de la tabla intermedia CientificoEspecialidad.
+            // Mapeo de DateTime a DateOnly (Para los POST/PUT)
+            CreateMap<DateTime, DateOnly>().ConvertUsing(dt => DateOnly.FromDateTime(dt));
+            CreateMap<DateTime?, DateOnly?>().ConvertUsing(dt => dt.HasValue ? DateOnly.FromDateTime(dt.Value) : null);
+
+            // Mapeo de DateOnly a DateTime (Para los GET)
+            CreateMap<DateOnly, DateTime>().ConvertUsing(d => d.ToDateTime(TimeOnly.MinValue));
+            CreateMap<DateOnly?, DateTime?>().ConvertUsing(d => d.HasValue ? d.Value.ToDateTime(TimeOnly.MinValue) : null);
+
+
+
+            // Mapeos para Científicos (Tus mapeos actuales se quedan igual)
             CreateMap<Cientifico, CientificoDto>()
-                .ForMember(dest => dest.Especialidades, opt => opt.MapFrom(src => src.CientificoEspecialidades.Select(ce => ce.Especialidad)));
+                .ForMember(dest => dest.Especialidades, opt => opt.MapFrom(src => src.Especialidades));
 
             CreateMap<Cientifico, CientificoDetalleDto>()
-                .ForMember(dest => dest.Especialidades, opt => opt.MapFrom(src => src.CientificoEspecialidades.Select(ce => ce.Especialidad)))
+                .ForMember(dest => dest.Especialidades, opt => opt.MapFrom(src => src.Especialidades))
                 .ForMember(dest => dest.Descubrimientos, opt => opt.MapFrom(src => src.Descubrimientos))
                 .ForMember(dest => dest.Investigaciones, opt => opt.MapFrom(src => src.Investigaciones));
 
             // Los DTOs usan "FechaNaciemiento" en el JSON; el modelo usa "FechaNacimiento".
-            // AutoMapper copia por nombre, así que se mapea explícitamente para mantener el contrato.
             CreateMap<CrearCientificoDto, Cientifico>()
                 .ForMember(dest => dest.FechaNacimiento, opt => opt.MapFrom(src => src.FechaNaciemiento));
             CreateMap<ActualizarCientificoDto, Cientifico>()

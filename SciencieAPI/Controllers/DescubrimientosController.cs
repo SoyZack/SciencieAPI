@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SciencieAPI.Data;
 using SciencieAPI.Dtos.Descubrimientos;
 using SciencieAPI.Models;
 
@@ -11,16 +10,16 @@ namespace SciencieAPI.Controllers
     [Route("api/[controller]")]
     public class DescubrimientosController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly DescubrimientosContext _context;
         private readonly IMapper _mapper;
 
-        public DescubrimientosController(AppDbContext context, IMapper mapper)
+        public DescubrimientosController(DescubrimientosContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
 
-        // GET: api/descubrimientos (Lista todos los descubrimientos)[cite: 2]
+        // GET: Lista todos los descubrimientos
         [HttpGet]
         public async Task<IActionResult> GetDescubrimientos()
         {
@@ -29,7 +28,7 @@ namespace SciencieAPI.Controllers
             return Ok(descubrimientosDto);
         }
 
-        // GET: api/cientificos/{cientificoId}/descubrimientos (Lista descubrimientos de un científico específico)[cite: 2]
+        // GET: Lista descubrimientos de un científico específico
         [HttpGet("/api/cientificos/{cientificoId}/descubrimientos")]
         public async Task<IActionResult> GetDescubrimientosPorCientifico(int cientificoId)
         {
@@ -45,7 +44,7 @@ namespace SciencieAPI.Controllers
             return Ok(descubrimientosDto);
         }
 
-        // POST: api/descubrimientos (Registra un nuevo descubrimiento)[cite: 2]
+        // POST: Registra un nuevo descubrimiento
         [HttpPost]
         public async Task<IActionResult> CrearDescubrimiento([FromBody] CrearDescubrimientoDto crearDto)
         {
@@ -61,7 +60,7 @@ namespace SciencieAPI.Controllers
             return CreatedAtAction(nameof(GetDescubrimientos), new { id = descubrimiento.Id }, descubrimientoDto);
         }
 
-        // PUT: api/descubrimientos/{id} (Actualiza un descubrimiento)[cite: 2]
+        // PUT: Actualiza un descubrimiento
         [HttpPut("{id}")]
         public async Task<IActionResult> ActualizarDescubrimiento(int id, [FromBody] ActualizarDescubrimientoDto actualizarDto)
         {
@@ -75,7 +74,7 @@ namespace SciencieAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/descubrimientos/{id} (Elimina un descubrimiento)[cite: 2]
+        // DELETE: Elimina un descubrimiento
         [HttpDelete("{id}")]
         public async Task<IActionResult> EliminarDescubrimiento(int id)
         {

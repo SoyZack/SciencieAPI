@@ -1,27 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
-namespace SciencieAPI.Models
+namespace SciencieAPI.Models;
+
+public partial class Descubrimiento
 {
-    public class Descubrimiento
-    {
-        [Key]
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        [Required, StringLength(150)]
-        public string Titulo { get; set; } = string.Empty;
+    public string Titulo { get; set; } = null!;
 
-        // La columna en SQL Server se llama "Descripcion".
-        [Required]
-        public string Descripcion { get; set; } = string.Empty;
+    public string Descripcion { get; set; } = null!;
 
-        [Required]
-        public DateTime FechaDescubrimiento { get; set; }
+    public DateOnly FechaDescubrimiento { get; set; }
 
-        [Required, StringLength(150)]
-        public string Lugar { get; set; } = string.Empty;
+    public string Lugar { get; set; } = null!;
 
-        // Llave foranea y navegacion hacia Cientifico
-        public int CientificoId { get; set; }
-        public Cientifico Cientifico { get; set; } = null!;
-    }
+    public int CientificoId { get; set; }
+
+    public virtual Cientifico Cientifico { get; set; } = null!;
 }

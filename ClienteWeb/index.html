@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubrimientos Científicos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Gestión de Científicos</h1>
+
+        <div class="d-flex justify-content-between align-items-center mb-4 gap-3">
+            <input type="text" id="buscador" class="form-control shadow-sm" placeholder="🔍 Buscar científico por nombre..." onkeyup="filtrarCientificos()">
+            <button class="btn btn-primary text-nowrap shadow-sm" data-bs-toggle="modal" data-bs-target="#modalCrear">Nuevo Científico</button>
+        </div>
+
+        <!-- Aquí se renderizarán las tarjetas de los científicos -->
+        <div class="row" id="contenedor-cientificos">
+            <p class="text-center text-muted">Cargando datos...</p>
+        </div>
+    </div>
+
+
+    <!-- Modal para Crear Científico -->
+    <div class="modal fade" id="modalCrear" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nuevo Científico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formCrear">
+                        <div class="mb-3"><input type="text" id="nombre" class="form-control" placeholder="Nombre" required></div>
+                        <div class="mb-3"><input type="text" id="apellido" class="form-control" placeholder="Apellido" required></div>
+                        <div class="mb-3"><input type="text" id="nacionalidad" class="form-control" placeholder="Nacionalidad" required></div>
+                        <div class="mb-3"><input type="date" id="fechaNacimiento" class="form-control" required></div>
+                        <div class="mb-3"><input type="email" id="email" class="form-control" placeholder="Email" required></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="guardarCientifico()">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ver Detalles -->
+    <div class="modal fade" id="modalDetalles" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detallesNombre">Cargando...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+                                <h6 class="text-primary mb-0">Especialidades</h6>
+                                <button class="btn btn-sm btn-outline-primary py-0 px-2" onclick="abrirModalEspecialidad()">+</button>
+                            </div>
+                            <ul id="detallesEspecialidades" class="mt-2 list-unstyled"></ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+                                <h6 class="text-success mb-0">Descubrimientos</h6>
+                                <button class="btn btn-sm btn-outline-success py-0 px-2" onclick="abrirModalDescubrimiento()">+</button>
+                            </div>
+                            <ul id="detallesDescubrimientos" class="mt-2 list-unstyled"></ul>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+                                <h6 class="text-warning mb-0">Investigaciones</h6>
+                                <button class="btn btn-sm btn-outline-warning py-0 px-2" onclick="abrirModalInvestigacion()">+</button>
+                            </div>
+                            <ul id="detallesInvestigaciones" class="mt-2 list-unstyled"></ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Crear Descubrimiento -->
+    <div class="modal fade" id="modalDescubrimiento" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registrar Descubrimiento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formDescubrimiento">
+                        <div class="mb-3"><input type="text" id="tituloDesc" class="form-control" placeholder="Título (ej. Teoría de la Relatividad)" required></div>
+                        <div class="mb-3"><input type="text" id="lugarDesc" class="form-control" placeholder="Lugar (ej. Berna, Suiza)" required></div>
+                        <div class="mb-3"><input type="date" id="fechaDesc" class="form-control" required></div>
+                        <div class="mb-3"><textarea id="descripcionDesc" class="form-control" placeholder="Descripción detallada..." required></textarea></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="guardarDescubrimiento()">Guardar Descubrimiento</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crear Investigación -->
+    <div class="modal fade" id="modalInvestigacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registrar Investigación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formInvestigacion">
+                        <div class="mb-3"><input type="text" id="tituloInv" class="form-control" placeholder="Título" required></div>
+                        <div class="mb-3"><input type="text" id="areaInv" class="form-control" placeholder="Área de Estudio" required></div>
+                        <div class="mb-3"><label class="form-label text-muted small mb-0">Fecha de Inicio</label><input type="date" id="inicioInv" class="form-control" required></div>
+                        <div class="mb-3"><label class="form-label text-muted small mb-0">Fecha de Fin (Opcional)</label><input type="date" id="finInv" class="form-control"></div>
+                        <div class="mb-3">
+                            <select id="estadoInv" class="form-control" required>
+                                <option value="">Selecciona un estado...</option>
+                                <option value="En Curso">En Curso</option>
+                                <option value="Finalizada">Finalizada</option>
+                                <option value="Publicada">Publicada</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning text-dark" onclick="guardarInvestigacion()">Guardar Investigación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Asignar Especialidad -->
+    <div class="modal fade" id="modalEspecialidad" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Asignar Especialidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formEspecialidad">
+                        <div class="mb-3">
+                            <label class="form-label">Selecciona una especialidad del catálogo:</label>
+                            <select id="selectEspecialidad" class="form-control" multiple required style="height: 120px;">
+                                <option value="">Cargando especialidades...</option>
+                            </select>
+                            <small class="text-muted">Mantén presionada la tecla Ctrl (o Cmd) para seleccionar varias.</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="asignarEspecialidad()">Asignar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script de Bootstrap (necesario para que el modal se abra/cierre) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de lógica -->
+    <script src="app.js"></script>
+</body>
+</html>

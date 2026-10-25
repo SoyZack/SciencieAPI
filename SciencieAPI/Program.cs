@@ -1,22 +1,30 @@
 using Microsoft.EntityFrameworkCore;
-using SciencieAPI.Data;
 using SciencieAPI.Mappings;
+using SciencieAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PermitirTodo", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 // Registra los controladores HTTP de la API.
 builder.Services.AddControllers();
 
-// EF Core: registra el DbContext y lo configura para usar SQL Server
-// con la cadena de conexión "DefaultConnection" definida en appsettings.json.
-builder.Services.AddDbContext<AppDbContext>(options =>
+// Registra el DbContext y lo configura para usar SQL Server
+builder.Services.AddDbContext<DescubrimientosContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// AutoMapper: registra el perfil MappingProfile para convertir entidades a DTOs
-// y DTOs a entidades. Se usa la extensión AddAutoMapper incluida en AutoMapper.
+// Registra el perfil MappingProfile para convertir entidades a DTOs
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
 
-// Swagger (Swashbuckle): genera la documentación OpenAPI y la interfaz /swagger
+// Genera la documentación OpenAPI y la interfaz /swagger
 // para probar los endpoints desde el navegador.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -25,6 +33,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+app.UseCors("PermitirTodo");
 
 // En desarrollo se habilita la documentación de la API.
 if (app.Environment.IsDevelopment())
@@ -40,8 +50,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// Expone los controladores registrados con AddControllers.
 app.MapControllers();
-
 app.Run();
