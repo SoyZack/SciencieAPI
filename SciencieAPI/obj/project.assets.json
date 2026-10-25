@@ -3779,23 +3779,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Uptim\\.nuget\\packages\\": {},
+    "C:\\Users\\Edgar Ruiz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\SciencieAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Edgar Ruiz\\Documents\\DSP\\Desafio 3\\SciencieAPI\\SciencieAPI.csproj",
       "projectName": "SciencieAPI",
-      "projectPath": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\SciencieAPI.csproj",
-      "packagesPath": "C:\\Users\\Uptim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Uptim\\source\\repos\\SciencieAPI\\SciencieAPI\\obj\\",
+      "projectPath": "C:\\Users\\Edgar Ruiz\\Documents\\DSP\\Desafio 3\\SciencieAPI\\SciencieAPI.csproj",
+      "packagesPath": "C:\\Users\\Edgar Ruiz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Edgar Ruiz\\Documents\\DSP\\Desafio 3\\SciencieAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Uptim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Edgar Ruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3804,7 +3804,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
